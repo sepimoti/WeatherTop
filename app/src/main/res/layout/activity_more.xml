@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather_background"
+    tools:context=".MoreActivity">
+    <TextView
+        android:id="@+id/txtCity_More"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/silver"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/txtDay_More"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_toEndOf="@id/txtCity_More"
+        android:layout_alignBaseline="@id/txtCity_More"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/txtTemp_More"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:textColor="@color/silver"
+        android:layout_below="@id/txtCity_More"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/txtCity_More"/>
+
+    <TextView
+        android:id="@+id/txtCondition_More"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/Blue"
+        android:layout_below="@id/txtTemp_More"
+        android:layout_alignLeft="@id/txtTemp_More"/>
+
+    <ImageView
+        android:id="@+id/imgCondition_More"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtTemp_More"
+        android:layout_alignBottom="@id/txtCondition_More"
+        android:layout_toEndOf="@id/txtTemp_More"
+        android:layout_marginLeft="50dp"/>
+</RelativeLayout>

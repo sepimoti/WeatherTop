@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/city_background"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/txtCity_Recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/silver"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/txtDay_Recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_toEndOf="@id/txtCity_Recycler"
+        android:layout_alignBaseline="@id/txtCity_Recycler"
+        android:layout_marginLeft="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/lnrMore_Recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="view more"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/right"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTemp_Recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:textColor="@color/silver"
+        android:layout_below="@id/txtCity_Recycler"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/txtCity_Recycler"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" C"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/silver"
+        android:layout_toEndOf="@id/txtTemp_Recycler"
+        android:layout_alignBaseline="@id/txtTemp_Recycler"/>
+
+    <TextView
+        android:id="@+id/txtCondition_Recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/Blue"
+        android:layout_below="@id/txtTemp_Recycler"
+        android:layout_alignLeft="@id/txtCity_Recycler"/>
+
+    <ImageView
+        android:id="@+id/imgCondition_Recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtTemp_Recycler"
+        android:layout_alignBottom="@id/txtCondition_Recycler"
+        android:layout_toEndOf="@id/txtTemp_Recycler"
+        android:layout_marginLeft="50dp"/>
+</RelativeLayout>
